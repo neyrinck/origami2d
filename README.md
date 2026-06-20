@@ -6,6 +6,8 @@ Mangling Indices
 
 A 2D python version of ORIGAMI (Falck, Neyrinck & Szalay 2012). The ORIGAMI morphology is designed to be the number of orthogonal axes in which a particle has crossed some other particle from the initial to final conditions. In the present version, the particle x-coordinate rank (the order) is compared in rows, and the y-coordinate rank is compared in columns; if a particle is out-of-order with respect to the initial-conditions order, it is tagged. The initial ordering is assumed to be encoded in the ordering of the particle array. (In this implementation, there are 2 numpy x and y arrays, x (NxN) and y (NxN), ordered such that x increments in the 0th axis of the array and y does not change; y increments in the 1st axis of the array and x does not change.) The orderings are compared both along the Cartesian axis, and 45-degrees diagonal to it. 
 
+This is an example particle-tagging effort using a 2D N-body simulation, computed within the example code, with the code of Hidding (2020), https://github.com/jhidding/nbody2d
+
 <img width="1200" height="1200" alt="origami_example" src="https://github.com/user-attachments/assets/3a692bcc-b9f0-4077-9afe-9bfb03e09c4c" />
 
 This simple comparison of initial and final orderings works most of the time, but particles can happen retain their initial ordering; here is a Lagrangian view, one pixel per particle, of the raw classification (dark purple=void; green=filament; yellow=halo). There are some apparently incorrect spots inside haloes.
