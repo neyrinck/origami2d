@@ -20,7 +20,7 @@ This simple comparison of initial and final orderings tags crossed particles mos
 
 <img width="640" height="480" alt="lagrangian_morph_raw" src="https://github.com/user-attachments/assets/cf1adbf5-d7cb-40d7-bbc0-2c11ba5d833c" />
 
-It is less clear how to deal with this issue for filaments, and we do not presently. But with the skimage.morphology.remove_small_holes function, we can plausibly capture nearly all(?) of these underestimates of the morphology number, by filling holes, as shown below. This involves an assumption/definition that haloes are simply-connected blobs in Lagrangian space.
+With the skimage.morphology.remove_small_holes function, we can plausibly capture nearly all(?) of these exclusions of particles in haloes, by filling holes, as shown below. This involves an assumption/definition that haloes are simply-connected blobs in Lagrangian space. It is less clear how to deal with this issue for filaments; we do not, presently, but the same strategy could be used as with haloes, to fill small holes in contiguous filament patches.
 
 <img width="640" height="480" alt="lagrangian_haloes_holesfilled" src="https://github.com/user-attachments/assets/9b96c2ec-3789-4d96-bd86-61a58125d954" />
 
