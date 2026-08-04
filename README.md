@@ -4,7 +4,7 @@ Order-ReversIng
 Gravity, Apprehended
 Mangling Indices
 
-A 2D python implementation in the same spirit as ORIGAMI (Falck, Neyrinck & Szalay 2012);
+A 2D python implementation in the same spirit as ORIGAMI (Falck, Neyrinck & Szalay 2012, MNRAS, https://ui.adsabs.harvard.edu/abs/2012ApJ...754..126F/abstract);
 
 Order-ReversIng
 Gravity, Apprehended
