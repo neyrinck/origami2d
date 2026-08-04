@@ -7,7 +7,9 @@ Mangling Indices
 A 2D python implementation in the same spirit as ORIGAMI (Falck, Neyrinck & Szalay 2012, MNRAS, https://ui.adsabs.harvard.edu/abs/2012ApJ...754..126F/abstract);
 
 Order-ReversIng
+
 Gravity, Apprehended
+
 Mangling Indices
 
 The ORIGAMI morphology is defined as the number of orthogonal axes in which a particle has crossed some other particle from the initial to final conditions. (This is what the original, 3D version does, https://github.com/bfalck/origami.) In the present version, a few-line, an extremely fast and simple version of that is used, which more explicitly detects "mangled indices" as in the acronym expansion. (This method misses a small fraction of crossings, as shown below, but most of these can be recovered.) This version was developed for 2D halo finding for the paper "Galaxy and Halo Root Systems: Fingerprints of Mass Assembly," https://arxiv.org/abs/2503.21015
