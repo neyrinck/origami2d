@@ -1,16 +1,12 @@
 ## ORIGAMI-2D
 
-Order-ReversIng
-Gravity, Apprehended
+<div align="center">
+<p>Order-ReversIng<br>
+Gravity, Apprehended<br>
 Mangling Indices
+</div>
 
-A 2D python implementation in the same spirit as ORIGAMI (Falck, Neyrinck & Szalay 2012, MNRAS, https://ui.adsabs.harvard.edu/abs/2012ApJ...754..126F/abstract);
-
-Order-ReversIng
-
-Gravity, Apprehended
-
-Mangling Indices
+A 2D python implementation of the essential concept of ORIGAMI (Falck, Neyrinck & Szalay 2012, MNRAS, https://ui.adsabs.harvard.edu/abs/2012ApJ...754..126F/abstract)
 
 The ORIGAMI morphology is defined as the number of orthogonal axes in which a particle has crossed some other particle from the initial to final conditions. (This is what the original, 3D version does, https://github.com/bfalck/origami.) In the present version, a few-line, an extremely fast and simple version of that is used, which more explicitly detects "mangled indices" as in the acronym expansion. (This method misses a small fraction of crossings, as shown below, but most of these can be recovered.) This version was developed for 2D halo finding for the paper "Galaxy and Halo Root Systems: Fingerprints of Mass Assembly," https://arxiv.org/abs/2503.21015
 
@@ -24,7 +20,7 @@ This simple comparison of initial and final orderings tags crossed particles mos
 
 <img width="640" height="480" alt="lagrangian_morph_raw" src="https://github.com/user-attachments/assets/cf1adbf5-d7cb-40d7-bbc0-2c11ba5d833c" />
 
-It is less clear how to deal with this issue for filamnets, and we do not presently. But with the skimage.morphology.remove_small_holes function, we can plausibly capture nearly all(?) of these underestimates of the morphology number, by filling holes, as shown below. This involves an assumption/definition that haloes are simply-connected blobs in Lagrangian space.
+It is less clear how to deal with this issue for filaments, and we do not presently. But with the skimage.morphology.remove_small_holes function, we can plausibly capture nearly all(?) of these underestimates of the morphology number, by filling holes, as shown below. This involves an assumption/definition that haloes are simply-connected blobs in Lagrangian space.
 
 <img width="640" height="480" alt="lagrangian_haloes_holesfilled" src="https://github.com/user-attachments/assets/9b96c2ec-3789-4d96-bd86-61a58125d954" />
 
